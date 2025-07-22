@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flagged Messages Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #2c3e50;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-top: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            text-align: center;
+        }
+        .sidebar ul li:hover {
+            background-color: #34495e;
+            cursor: pointer;
+        }
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .flagged-messages {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .flagged-messages .message {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Flagged Messages Dashboard</h1>
+</div>
+
+<div class="sidebar">
+    <ul>
+        <li>Dashboard</li>
+        <li>Settings</li>
+        <li>Reports</li>
+        <li>Logout</li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <!-- Summary Section -->
+    <div class="card">
+        <h3>Summary</h3>
+        <p>Total Flagged Messages: <strong>14</strong></p>
+        <p>WhatsApp: <strong>4</strong></p>
+        <p>Telegram: <strong>4</strong></p>
+        <p>Instagram: <strong>3</strong></p>
+        <p>Voice Messages in Telegram: <strong>3</strong></p>
+    </div>
+
+    <!-- Flagged Messages Section -->
+    <div class="card">
+        <h3>Flagged Messages</h3>
+        <div class="flagged-messages">
+            <!-- WhatsApp Messages -->
+            <div class="message">
+                <h4>WhatsApp</h4>
+                <p><strong>A R S H E E 🦋 :</strong> "Need 20gms of mdma"</p>
+                <p><strong>Abdul Hafeez:</strong> "Can I get lsd"</p>
+                <p><strong>Fasna ✨:</strong> "I want two grams of mephedrone"</p>
+                <p><strong>Anas❗</strong> "I want tobacco chocolate"</p>
+            </div>
+            <!-- Telegram Messages -->
+            <div class="message">
+                <h4>Instagram</h4>
+                <p><strong>abd.hafees</strong> "lsd please"</p>
+                <p><strong>Just.fasna:</strong> "can I get drugs"</p>
+                <p><strong>mohd_anazzz:</strong> "Can I get Mdma"</p>
+            </div>
+            <!-- Instagram Messages -->
+            <div class="message">
+                <h4>Telegram</h4>
+                <p><strong>Snos21:</strong> "Is drugs are suspicious?"</p>
+                <p><strong>Fasna:</strong> "Alcohol please"</p>
+                <p><strong>mohd_anazzz:</strong> "I want 3gms of mdma"</p>
+                <p><strong>Arshie05:</strong> "Need two bottles of alcohol now"</p>
+            </div>
+            <!-- Voice Messages -->
+            <div class="message">
+                <h4>Voice Messages in Telegram</h4>
+                <p><strong>fasna</strong> "can i get 50 gms of lsd"</p>
+                <p><strong>Arshie05:</strong> "how much 2 gms of mdma costs"</p>
+                <p><strong>Snos21:</strong> "how much lsd you have"</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

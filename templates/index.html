@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10.0">
+    <title>Flagged Messages</title>
+</head>
+<body>
+    <h1>Flagged Messages</h1>
+    <table border="15">
+        <tr>
+            <th>ID</th>
+            <th>Message</th>
+            <th>User</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for message in messages %}
+        <tr>
+            <td>{{ message[0] }}</td>
+            <td>{{ message[1] }}</td>
+            <td>{{ message[2] }}</td>
+            <td>{{ message[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
